@@ -50,4 +50,4 @@ def decisionTree():
     return render_template("decision-tree.html",title="决策树")
 
 if __name__ == "__main__":
-    app.run()
+    app.run('0.0.0.0')
