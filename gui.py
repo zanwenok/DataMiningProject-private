@@ -34,7 +34,7 @@ def knn():
 
 @app.route("/knn-result")
 def knn_result():
-    return "%.3f%%" %((1-crossValidation("C:/Users/Mr.x/repos/DataMiningProject/zanwen/data/cleandata.csv", knn_k, knn_lp))*100)
+    return "%.3f%%" %((1-crossValidation({{url_for('static',filename='rawdata.csv')}}, knn_k, knn_lp))*100)
 
 
 @app.route("/svm")
