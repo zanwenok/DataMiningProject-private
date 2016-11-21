@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block script%}
+
+{% endblock%}
+
+{% block body %}
+
+
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>朴素贝叶斯</h1>
+    <p class="lead">朴素贝叶斯法（Naive Bayes）是基于贝叶斯定理与特征条件独立假设的分类方法。 </p>
+  </div>
+</header>
+
+<div class="container">
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix-top">
+          <li class=""><a href="#section1"><i class="icon-chevron-right"></i> 参数设定</a></li>
+          <li class=""><a href="#section2"><i class="icon-chevron-right"></i> 结果展示</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+        <!-- Section
+        ================================================== -->
+
+        <!-- Section
+        ================================================== -->
+        <section id="section1">
+          <div class="page-header">
+            <h1>参数设定</h1>
+          </div>
+           <!--<form action="" method="post">-->
+               <!--<ul>-->
+                   <!--<li>k: <input type="text" name="knn_k"></li>-->
+                   <!--<li>lp: <input type="text" name="knn_lp"></li>-->
+               <!--</ul>-->
+               <!--<p><input type="submit" class="btn btn-primary" value="提交"></p>-->
+           <!--</form>-->
+
+         <form  action="" method="post" class="from">
+             <div>
+                 <label  for="inputK">参数1: </label>
+                 <input type="text" name="knn_k" id = "inputK" placeholder="请输入参数1...">
+             </div>
+             <div>
+                 <label   for="inputLp">参数2: </label>
+                 <input type="text" name="knn_lp" id="inputLp" placeholder="请输入参数2....">
+             </div>
+             <button type="submit" class="btn btn-primary">提交</button>
+         </form>
+
+
+        </section>
+
+          <section id="section2">
+          <div class="page-header">
+            <h1>结果展示</h1>
+          </div>
+            <p id="precise_rate">正确率: </p>
+              <button id="knn_btn" class="btn btn-primary">运行</button>
+          </section>
+
+      </div>
+    </div>
+</div>
+
+{%endblock%}
