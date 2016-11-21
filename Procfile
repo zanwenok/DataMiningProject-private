@@ -1,0 +1,1 @@
+web: python gui.py runserver 0.0.0.0:80 --noreload
